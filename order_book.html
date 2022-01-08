@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      h1 {
+          color: #000;
+      }
+
+      /* Add styles to the form container */
+      .container {
+           position: relative;
+           margin-left: 30%;
+           margin-top: 5%;
+           margin-bottom: 10%;
+           margin-right: 5%;
+
+           max-width: 600px;
+           padding: 3rem;
+           background-color: white;
+      }
+
+      /* Full-width input fields */
+       input[type=text], input[type=password] {
+           width: 100%;
+           padding: 15px;
+           margin: 5px 0 22px 0;
+           border: none;
+           background: #f1f1f1;
+      }
+
+      input[type=text]:focus, input[type=password]:focus {
+           background-color: #ddd;
+           outline: none;
+      }
+
+      /* Set a style for the submit button */
+      .btn {
+           background-color: #049caD;
+           color: white;
+           padding: 16px 20px;
+           border: none;
+           cursor: pointer;
+           width: 100%;
+           opacity: 0.9;
+      }
+
+      .btn:hover {
+           opacity: 1;
+      }
+      @media only screen and (max-width: 420px) {
+
+          .container {
+              margin-left:5%;
+              margin-right:5%;
+          }
+          .btn {
+              margin-left: 7%;
+          }
+      }
+    </style>
+
+    <title>Bookshop Digital</title>
+  </head>
+
+  <body>
+    <h1>Bookshop Digital</h1>
+
+    <section class="nav sticky">
+      <div class="navitem"><a href="/" class="nav-link"> Home Page </a></div>
+
+      <div class="navitem"><a href="new_arrivals.html" class="nav-link"> New Arrivals </a></div>
+
+      <div class="navitem"><a href="all_books.html" class="nav-link"> By Genre </a></div>
+
+      <div class="navitem"><a href="about.html" class="nav-link"> About Us </a></div>
+
+    </section>
+
+    <section>
+        <form action="/action_page.php" class="container">
+          <h1>Request a book</h1>
+          <label for="bookname"><b>Name</b></label>
+          <input type="text" placeholder="Book Title" name="bookname" required>
+
+          <label for="authorname"><b>Author</b></label>
+          <input type="text" placeholder="Author's name" name="authorname" required>
+
+          <label for="isbn"><b>ISBN</b></label>
+          <input type="text" placeholder="ISBN " name="isbn" required>
+
+          <label for="email"><b>Your Email</b></label>
+          <input type="text" placeholder="Enter your email here" name="email" required>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer-logo">
+        <p>Bookshop Digital</p>
+      </div>
+
+      <div class="footer-info"> </div>
+      <ul class="footer-info-list">
+        <li><p>Email: bookshopdigital@gmail.com</p></li>
+        <li><p>Phone: (+977) 5539021</p></li>
+        <li><p>Location: New Road, Kathmandu</p></li>
+      </ul>
+      <div class="footer-copyright"> <p> &copy; 2022 All Rights Reserved</div></p>
+</footer>
+</body>
+
+</html>
